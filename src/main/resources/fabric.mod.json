@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "cool-emojis",
+  "version": "${version}",
+
+  "name": "Cool Emojis",
+  "description": "Server-side custom emoji mod",
+  "authors": [
+    "P0ke"
+  ],
+  "contact": {
+    "homepage": "https://p0ke.dev/",
+    "sources": "https://github.com/P0keDev/Cool-Emojis"
+  },
+
+  "license": "MPL-2.0",
+  "icon": "assets/cool-emojis/icon.png",
+
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "dev.p0ke.coolemojis.CoolEmojis"
+    ]
+  },
+  "mixins": [
+    "cool-emojis.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  }
+}
